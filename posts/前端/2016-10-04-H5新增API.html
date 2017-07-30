@@ -1,0 +1,42 @@
+<!DOCTYPE html><html lang="zh-CN"><head><meta http-equiv="content-type" content="text/html; charset=utf-8"><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport"><meta content="yes" name="apple-mobile-web-app-capable"><meta content="black-translucent" name="apple-mobile-web-app-status-bar-style"><meta content="telephone=no" name="format-detection"><meta name="description"><title>H5新增API | 刘水生的个人博客</title><link rel="stylesheet" type="text/css" href="//cdn.bootcss.com/normalize/4.2.0/normalize.min.css"><link rel="stylesheet" type="text/css" href="//cdn.bootcss.com/pure/0.6.0/pure-min.css"><link rel="stylesheet" type="text/css" href="//cdn.bootcss.com/pure/0.6.0/grids-responsive-min.css"><link rel="stylesheet" type="text/css" href="/css/style.css?v=0.0.0"><link rel="stylesheet" href="//cdn.bootcss.com/font-awesome/4.6.3/css/font-awesome.min.css"><script type="text/javascript" src="//cdn.bootcss.com/jquery/3.0.0/jquery.min.js"></script><link rel="Shortcut Icon" type="image/x-icon" href="/favicon.ico"><link rel="apple-touch-icon" href="/apple-touch-icon.png"><link rel="apple-touch-icon-precomposed" href="/apple-touch-icon.png"></head><body><div class="body_container"><div id="header"><div class="site-name"><h1 class="hidden">H5新增API</h1><a id="logo" href="/.">刘水生的个人博客</a><p class="description"></p></div><div id="nav-menu"><a href="/." class="current"><i class="fa fa-home"> 首页</i></a><a href="/archives/"><i class="fa fa-archive"> 归档</i></a><a href="/about/"><i class="fa fa-user"> 关于</i></a><a href="/opus/"><i class="fa fa-folder"> 作品</i></a></div></div><div id="layout" class="pure-g"><div class="pure-u-1 pure-u-md-3-4"><div class="content_container"><div class="post"><h1 class="post-title">H5新增API</h1><div class="post-meta">Oct 4, 2016<span> | </span><span class="category"><a href="/categories/前端/">前端</a></span><script src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js" async></script><span id="busuanzi_container_page_pv"> | <span id="busuanzi_value_page_pv"></span><span> Hits</span></span></div><div class="post-content"><h4 id="一、选择器"><a href="#一、选择器" class="headerlink" title="一、选择器"></a>一、选择器</h4><p>（使用方法和jq选择器类似）</p>
+<ul>
+<li><p>querySelector()     元素选择器</p>
+</li>
+<li><p>querySelectorAll()     组选择器</p>
+</li>
+</ul>
+<h4 id="二、classList"><a href="#二、classList" class="headerlink" title="二、classList"></a>二、classList</h4><p>功能：dom节点class列表   (IE10+支持) </p>
+<p>方法：</p>
+<ul>
+<li>length class的长度</li>
+<li>add() 增加class</li>
+<li>remove() 删除class</li>
+<li>toogle() 切换class(存在则删除，不存在则增加)</li>
+<li>contains() 判断是否存在class</li>
+</ul>
+<h4 id="三、JSON新方法"><a href="#三、JSON新方法" class="headerlink" title="三、JSON新方法"></a>三、JSON新方法</h4><p>方法:   </p>
+<ul>
+<li>parse() 将json格式的字符串转成json</li>
+<li>stringify() 将json转成字符串</li>
+</ul>
+<p>低版本浏览兼容：<br><a href="http://www.json.org/" target="_blank" rel="external">http://www.json.org/</a> 去下载json2.js<br>发</p>
+<h4 id="四、dataset"><a href="#四、dataset" class="headerlink" title="四、dataset"></a>四、dataset</h4><p>功能：获取元素自定义data属性</p>
+<p>用法:<br>dom.dataset.[data-后面跟的属性名字]</p>
+<p>例如:<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">&lt;div class=&quot;box&quot; data-name=&quot;shusheng&quot; data-name-all=&quot;liushuisheng&quot;&gt;&lt;/div&gt;</div></pre></td></tr></table></figure></p>
+<p>oBox.dataset.name<br>oBox.dataset.</p>
+<h4 id="五、Html5的defer和async"><a href="#五、Html5的defer和async" class="headerlink" title="五、Html5的defer和async"></a>五、Html5的defer和async</h4><ul>
+<li>defer : 延迟加载，会按顺序执行，在onload执行前被触发</li>
+<li>async : 异步加载，加载完就触发，有顺序问题</li>
+</ul>
+<p>一个异步的库： Labjs库</p>
+<h4 id="六、历史管理"><a href="#六、历史管理" class="headerlink" title="六、历史管理"></a>六、历史管理</h4><ul>
+<li>onhashchange  ：改变hash值来管理（hash值改变的时候会触发）</li>
+<li>history：<ul>
+<li>服务器下运行</li>
+<li>pushState :  三个参数 ：数据  标题(都没实现)  地址(可选)  一般window.pushState(data,’’)</li>
+<li>onpopstate事件 :  读取数据   event.state</li>
+<li>网址是虚假的，需在服务器指定对应页面，不然刷新找不到页面</li>
+</ul>
+</li>
+</ul>
+</div><div class="tags"><a href="/tags/html5/">html5</a></div><div class="post-nav"><a href="/posts/生活/2016-10-06-国庆去了深圳园博园.html" class="pre">国庆去了深圳园博园</a><a href="/posts/uncategorized/2016-10-02-我的独立博客今天创建好了.html" class="next">我的独立博客正式开通</a></div></div></div></div><div class="pure-u-1-4 hidden_mid_and_down"><div id="sidebar"><div class="widget"><div class="widget-title"><i class="fa fa-folder-o"> 分类</i></div><ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/前端/">前端</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/生活/">生活</a></li></ul></div><div class="widget"><div class="widget-title"><i class="fa fa-star-o"> 标签</i></div><div class="tagcloud"><a href="/tags/html5/" style="font-size: 15px;">html5</a> <a href="/tags/游玩/" style="font-size: 15px;">游玩</a> <a href="/tags/2016/" style="font-size: 15px;">2016</a></div></div><div class="widget"><div class="widget-title"><i class="fa fa-file-o"> 最新文章</i></div><ul class="post-list"><li class="post-list-item"><a class="post-list-link" href="/posts/uncategorized/2017-01-21-简易计算器.html">simple calc</a></li><li class="post-list-item"><a class="post-list-link" href="/posts/生活/2016-10-07-到珠江口转了转.html">到珠江口转了转</a></li><li class="post-list-item"><a class="post-list-link" href="/posts/生活/2016-10-06-国庆去了深圳园博园.html">国庆去了深圳园博园</a></li><li class="post-list-item"><a class="post-list-link" href="/posts/前端/2016-10-04-H5新增API.html">H5新增API</a></li><li class="post-list-item"><a class="post-list-link" href="/posts/uncategorized/2016-10-02-我的独立博客今天创建好了.html">我的独立博客正式开通</a></li></ul></div><div class="widget"><div class="widget-title"><i class="fa fa-external-link"> 友情链接</i></div><ul></ul><a href="https://github.com/AdleyLiu" title="gitHub" target="_blank">gitHub</a></div></div></div><div class="pure-u-1 pure-u-md-3-4"><div id="footer">© <a href="/." rel="nofollow">刘水生的个人博客 2016</a></div></div></div><a id="rocket" href="#top" class="show"></a><script type="text/javascript" src="/js/totop.js?v=0.0.0" async></script><script type="text/javascript" src="//cdn.bootcss.com/fancybox/2.1.5/jquery.fancybox.pack.js" async></script><script type="text/javascript" src="/js/fancybox.js?v=0.0.0" async></script><link rel="stylesheet" type="text/css" href="/css/jquery.fancybox.css?v=0.0.0"><script type="text/javascript" src="/js/codeblock-resizer.js?v=0.0.0"></script><script type="text/javascript" src="/js/smartresize.js?v=0.0.0"></script></div></body></html>
